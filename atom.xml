@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://ballballyou.coding.me/</id>
     <title>南京吴彦祖</title>
-    <updated>2019-09-25T17:01:04.045Z</updated>
+    <updated>2019-09-25T17:10:55.995Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://ballballyou.coding.me/"/>
     <link rel="self" href="http://ballballyou.coding.me//atom.xml"/>
@@ -10,6 +10,16 @@
     <logo>http://ballballyou.coding.me//images/avatar.png</logo>
     <icon>http://ballballyou.coding.me//favicon.ico</icon>
     <rights>All rights reserved 2019, 南京吴彦祖</rights>
+    <entry>
+        <title type="html"><![CDATA[在贵阳吃炒饭]]></title>
+        <id>http://ballballyou.coding.me//post/glO8ZGzOm</id>
+        <link href="http://ballballyou.coding.me//post/glO8ZGzOm">
+        </link>
+        <updated>2019-09-25T17:05:23.000Z</updated>
+        <content type="html"><![CDATA[<p>贵阳最出名的两种炒饭---蛋炒饭和怪肉饭</p>
+<figure data-type="image" tabindex="1"><img src="http://ballballyou.coding.me//post-images/1569431435610.jpg" alt=""></figure>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[回南京]]></title>
         <id>http://ballballyou.coding.me//post/6wJrWrzGB</id>
