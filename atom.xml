@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://ballballyou.coding.me/</id>
     <title>南京吴彦祖</title>
-    <updated>2019-09-27T19:14:39.027Z</updated>
+    <updated>2019-09-27T19:31:06.100Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://ballballyou.coding.me/"/>
     <link rel="self" href="http://ballballyou.coding.me//atom.xml"/>
@@ -11,7 +11,7 @@
     <icon>http://ballballyou.coding.me//favicon.ico</icon>
     <rights>All rights reserved 2019, 南京吴彦祖</rights>
     <entry>
-        <title type="html"><![CDATA[敢不敢来测试一下你的智商？]]></title>
+        <title type="html"><![CDATA[惊，人工智能真能检测你的智商？]]></title>
         <id>http://ballballyou.coding.me//post/T9h803qMs</id>
         <link href="http://ballballyou.coding.me//post/T9h803qMs">
         </link>
@@ -19,18 +19,18 @@
         <content type="html"><![CDATA[<p>`<!DOCTYPE html></p>
 <html>
 <body>
-<p>输入数字并点击提交：</p>
+<h3>以人工智能的方式测试您的智商，为您的钱包保驾护航</h3>
+<p>请随意输入数字并点击提交：👇</p>
 <input id="id1" type="number" min="100">
-<p><button onclick="myFunction()">提交</button></p>
-<p>如果数字小于100（输入的 min 属性），将显示错误消息。</p>
+<button onclick="myFunction()">提交✔</button>
 <p id="demo"></p>
 <script>
 function myFunction() {
   var txt = "";
   if (document.getElementById("id1").validity.rangeUnderflow) {
-    txt = "值太小";
+    txt = "您的智商余额不足，请前往支付宝账户充值：18852734070";
   } else {
-    txt = "输入有效";
+    txt = "你怕是个智障，还真来检测😄";
   } 
   document.getElementById("demo").innerHTML = txt;
 }
