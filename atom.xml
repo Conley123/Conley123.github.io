@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://ballballyou.coding.me/</id>
     <title>南京吴彦祖</title>
-    <updated>2019-09-27T16:58:31.583Z</updated>
+    <updated>2019-09-27T17:01:07.876Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://ballballyou.coding.me/"/>
     <link rel="self" href="http://ballballyou.coding.me//atom.xml"/>
@@ -65,12 +65,12 @@ function myFunction02() {
     <h1>查看当前中国标准时间⏰</h1>
     <h2>现在时间是：</h2>
     <p id="demo01"></p>
-    <button  onclick="myFunction01()">点我看时间👁</button>
-    <hr>
-    <h1>总有另一种方式等着你去发现👇</h1>
-    <h2>现在时间是：</h2>
-    <p id="demo02"></p>
-    <button  onclick="myFunction02()">再点我看看呢👀</button>
+    <button  onclick="myFunction01()">点我看时间</button>
+<pre><code>&lt;h1&gt;总有另一种方式等着你去发现👇&lt;/h1&gt;
+&lt;h2&gt;现在时间是：&lt;/h2&gt;
+&lt;p id=&quot;demo02&quot;&gt;&lt;/p&gt;
+&lt;button  onclick=&quot;myFunction02()&quot;&gt;再点我看看呢👀&lt;/button&gt;
+</code></pre>
 </body>
 </html>
 `
