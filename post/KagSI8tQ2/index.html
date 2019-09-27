@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>那就从JavaScript开始吧 | 南京吴彦祖</title>
 <meta name="description" content="静坐常思己过 闲谈莫论人非" />
-<link rel="shortcut icon" href="http://ballballyou.coding.me//favicon.ico?v=1569604618045">
+<link rel="shortcut icon" href="http://ballballyou.coding.me//favicon.ico?v=1569604828666">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="http://ballballyou.coding.me//styles/main.css">
@@ -20,7 +20,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="http://ballballyou.coding.me/">
-  <img class="avatar" src="http://ballballyou.coding.me//images/avatar.png?v=1569604618045" alt="">
+  <img class="avatar" src="http://ballballyou.coding.me//images/avatar.png?v=1569604828666" alt="">
   </a>
   <h1 class="site-title">
     南京吴彦祖
@@ -94,31 +94,32 @@
 <p>`<!DOCTYPE html></p>
 <html lang="en">
 <script>
-function myFunction02() {
-            Date.prototype.format = function (fmt) {
-                var o = {
-                    "M+": this.getMonth() + 1,               //月份
-                    "d+": this.getDate(),                    //日
-                    "h+": this.getHours(),                   //小时
-                    "m+": this.getMinutes(),                 //分
-                    "s+": this.getSeconds(),                 //秒
-                    "q+": Math.floor((this.getMonth() + 3) / 3), //季度
-                    "S": this.getMilliseconds()             //毫秒
-                };
-<pre><code>            if (/(y+)/.test(fmt)) {
-                fmt = fmt.replace(RegExp.$1, (this.getFullYear() + &quot;&quot;).substr(4 - RegExp.$1.length));
-            }
+<pre><code>function myFunction02() {
+    Date.prototype.format = function (fmt) {
+        var o = {
+            &quot;M+&quot;: this.getMonth() + 1,               //月份
+            &quot;d+&quot;: this.getDate(),                    //日
+            &quot;h+&quot;: this.getHours(),                   //小时
+            &quot;m+&quot;: this.getMinutes(),                 //分
+            &quot;s+&quot;: this.getSeconds(),                 //秒
+            &quot;q+&quot;: Math.floor((this.getMonth() + 3) / 3), //季度
+            &quot;S&quot;: this.getMilliseconds()             //毫秒
+        };
 
-            for (var k in o) {
-                if (new RegExp(&quot;(&quot; + k + &quot;)&quot;).test(fmt)) {
-                    fmt = fmt.replace(
-                        RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : ((&quot;00&quot; + o[k]).substr((&quot;&quot; + o[k]).length)));
-                }
-            }
-            return fmt;
+        if (/(y+)/.test(fmt)) {
+            fmt = fmt.replace(RegExp.$1, (this.getFullYear() + &quot;&quot;).substr(4 - RegExp.$1.length));
         }
 
-        document.getElementById(&quot;demo02&quot;).innerHTML = new Date().format(&quot;yyyy年MM月dd日hh小时mm分ss秒&quot;);
+        for (var k in o) {
+            if (new RegExp(&quot;(&quot; + k + &quot;)&quot;).test(fmt)) {
+                fmt = fmt.replace(
+                    RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : ((&quot;00&quot; + o[k]).substr((&quot;&quot; + o[k]).length)));
+            }
+        }
+        return fmt;
+    }
+
+    document.getElementById(&quot;demo02&quot;).innerHTML = new Date().format(&quot;yyyy年MM月dd日hh小时mm分ss秒&quot;);
 }
 </code></pre>
 </script>
@@ -127,10 +128,10 @@ function myFunction02() {
     <title>Title</title>
 </head>
 <body>
-    <h1>总有另一种方式等着你去发现👇</h1>
-    <h2>现在时间是：</h2>
-    <p id="demo02"></p>
-    <button  onclick="myFunction02()">再点我看看呢👀</button>
+<h1>总有另一种方式等着你去发现</h1>
+<h2>现在时间是：</h2>
+<p id="demo02"></p>
+<button  onclick="myFunction02()">再点我看看呢👀</button>
 </body>
 </html>`
 
