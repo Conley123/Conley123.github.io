@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://ballballyou.coding.me/</id>
     <title>南京吴彦祖</title>
-    <updated>2019-09-27T17:01:07.876Z</updated>
+    <updated>2019-09-27T17:03:09.373Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://ballballyou.coding.me/"/>
     <link rel="self" href="http://ballballyou.coding.me//atom.xml"/>
@@ -25,35 +25,6 @@
 <script>
 <pre><code>function myFunction01() {
     document.getElementById(&quot;demo01&quot;).innerHTML = Date();
-}
-
-
-function myFunction02() {
-        Date.prototype.format = function (fmt) {
-            var o = {
-                &quot;M+&quot;: this.getMonth() + 1,               //月份
-                &quot;d+&quot;: this.getDate(),                    //日
-                &quot;h+&quot;: this.getHours(),                   //小时
-                &quot;m+&quot;: this.getMinutes(),                 //分
-                &quot;s+&quot;: this.getSeconds(),                 //秒
-                &quot;q+&quot;: Math.floor((this.getMonth() + 3) / 3), //季度
-                &quot;S&quot;: this.getMilliseconds()             //毫秒
-            };
-
-            if (/(y+)/.test(fmt)) {
-                fmt = fmt.replace(RegExp.$1, (this.getFullYear() + &quot;&quot;).substr(4 - RegExp.$1.length));
-            }
-
-            for (var k in o) {
-                if (new RegExp(&quot;(&quot; + k + &quot;)&quot;).test(fmt)) {
-                    fmt = fmt.replace(
-                        RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : ((&quot;00&quot; + o[k]).substr((&quot;&quot; + o[k]).length)));
-                }
-            }
-            return fmt;
-        }
-
-        document.getElementById(&quot;demo02&quot;).innerHTML = new Date().format(&quot;yyyy年MM月dd日hh小时mm分ss秒&quot;);
 }
 </code></pre>
 </script>
