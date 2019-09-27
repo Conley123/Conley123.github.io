@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://ballballyou.coding.me/</id>
     <title>南京吴彦祖</title>
-    <updated>2019-09-27T20:39:01.431Z</updated>
+    <updated>2019-09-27T20:40:11.531Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://ballballyou.coding.me/"/>
     <link rel="self" href="http://ballballyou.coding.me//atom.xml"/>
@@ -36,7 +36,7 @@ function myFunction() {
 }
 </script>
 <br>
-<img src= "https://i.postimg.cc/DfpV0qgJ/20190928040849.jpg" width="260" height="200" alt = "微信收款码">
+<img src= "https://i.postimg.cc/DfpV0qgJ/20190928040849.jpg" width="260" height="260" alt = "微信收款码">
 </body>
 </html>`]]></content>
     </entry>
