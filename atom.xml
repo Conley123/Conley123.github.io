@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://ballballyou.coding.me/</id>
     <title>南京吴彦祖</title>
-    <updated>2019-09-27T18:28:02.164Z</updated>
+    <updated>2019-09-27T18:32:17.137Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://ballballyou.coding.me/"/>
     <link rel="self" href="http://ballballyou.coding.me//atom.xml"/>
@@ -16,8 +16,7 @@
         <link href="http://ballballyou.coding.me//post/KagSI8tQ2">
         </link>
         <updated>2019-09-27T15:22:10.000Z</updated>
-        <content type="html"><![CDATA[<p><img src="http://ballballyou.coding.me//post-images/1569598861526.jpg" alt=""><br>
-<strong>Demo01</strong>🍀</p>
+        <content type="html"><![CDATA[<p><strong>Demo01</strong>🍀</p>
 <p><em>手写一个查看当前时间的小案例</em><br>
 `<!DOCTYPE html></p>
 <html lang="en">
