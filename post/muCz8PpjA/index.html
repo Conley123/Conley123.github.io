@@ -1,99 +1,105 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" >
+
 <title>在重庆 | 南京吴彦祖</title>
-<meta name="description" content="静坐常思己过 闲谈莫论人非" />
-<link rel="shortcut icon" href="http://ballballyou.coding.me//favicon.ico?v=1569605449303">
+<meta name="description" content="静坐常思己过 闲谈莫论人非">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="http://ballballyou.coding.me//favicon.ico?v=1569606203502">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="http://ballballyou.coding.me//styles/main.css">
 
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
 
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="http://ballballyou.coding.me/">
-  <img class="avatar" src="http://ballballyou.coding.me//images/avatar.png?v=1569605449303" alt="">
-  </a>
-  <h1 class="site-title">
-    南京吴彦祖
-  </h1>
-  <p class="site-description">
-    静坐常思己过 闲谈莫论人非
-  </p>
-  <div class="menu-container">
-    
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="http://ballballyou.coding.me/">
+        <img src="http://ballballyou.coding.me//images/avatar.png?v=1569606203502" class="site-logo">
+        <h1 class="site-title">南京吴彦祖</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
       
-        <a href="/" class="menu">
-          首页
-        </a>
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
       
-    
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
       
-        <a href="/archives" class="menu">
-          归档
-        </a>
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
       
-    
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
       
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
+    </div>
   </div>
-  <div class="social-container">
-    
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
       
-    
+        
       
-    
+        
       
-    
+        
       
-    
+        
       
-    
+        
+      
+    </div>
+    <div class="site-description">
+      静坐常思己过 闲谈莫论人非
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">小居居</a> | <a class="rss" href="http://ballballyou.coding.me//atom.xml" target="_blank">RSS</a>
+    </div>
   </div>
 </div>
 
-        <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              在重庆
-            </h2>
-            <div class="post-info">
-              <span>
-                2019-09-25
-              </span>
-              <span>
-                1 min read
-              </span>
-              
-                <a href="http://ballballyou.coding.me//tag/Ya6WLGhH7" class="post-tag">
-                  # 旅行
-                </a>
-              
-            </div>
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">在重庆</h2>
+            <div class="post-date">2019-09-25</div>
             
-              <img class="post-feature-image" src="http://ballballyou.coding.me//post-images/muCz8PpjA.jpg" alt="">
+              <div class="feature-container" style="background-image: url('http://ballballyou.coding.me//post-images/muCz8PpjA.jpg')">
+              </div>
             
-            <div class="post-content-wrapper">
-              <div class="post-content">
-                <p>中秋佳节，本该在南京赏花赏月赏秋香，无奈出差在贵阳，形单影只，孤独落寞，便来了长说走就走的旅行，一路上倒挺开心的，以下多图预警。😎</p>
+            <div class="post-content">
+              <p>中秋佳节，本该在南京赏花赏月赏秋香，无奈出差在贵阳，形单影只，孤独落寞，便来了长说走就走的旅行，一路上倒挺开心的，以下多图预警。😎</p>
 <p><img src="http://ballballyou.coding.me//post-images/1569426571598.jpg" alt=""><br>
 <img src="http://ballballyou.coding.me//post-images/1569426610560.jpg" alt="在火车上看日出2"><br>
 <strong>毕竟直辖市，牌面还是杠杠滴</strong>👏<br>
@@ -104,65 +110,45 @@
 <!-- more -->
 <p>仅为测试，未完，待续。。。</p>
 
-              </div>
-              <div class="toc-container">
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="http://ballballyou.coding.me//tag/Ya6WLGhH7" class="tag">
+                    旅行
+                  </a>
                 
               </div>
-            </div>
-          </article>
+            
+            
+
+            
+
+          </div>
+
         </div>
+      </div>
+    </div>
 
-        
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
-        
+<script type="application/javascript">
 
-        <div class="site-footer">
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">小居居</a> | 
-  <a class="rss" href="http://ballballyou.coding.me//atom.xml" target="_blank">RSS</a>
-</div>
+AOS.init();
 
-<script>
-  hljs.initHighlightingOnLoad()
+hljs.initHighlightingOnLoad()
 
-  let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
-
-  // This should probably be throttled.
-  // Especially because it triggers during smooth scrolling.
-  // https://lodash.com/docs/4.17.10#throttle
-  // You could do like...
-  // window.addEventListener("scroll", () => {
-  //    _.throttle(doThatStuff, 100);
-  // });
-  // Only not doing it here to keep this Pen dependency-free.
-
-  window.addEventListener("scroll", event => {
-    let fromTop = window.scrollY;
-
-    mainNavLinks.forEach((link, index) => {
-      let section = document.getElementById(decodeURI(link.hash).substring(1));
-      let nextSection = null
-      if (mainNavLinks[index + 1]) {
-        nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-      }
-      if (section.offsetTop <= fromTop) {
-        if (nextSection) {
-          if (nextSection.offsetTop > fromTop) {
-            link.classList.add("current");
-          } else {
-            link.classList.remove("current");    
-          }
-        } else {
-          link.classList.add("current");
-        }
-      } else {
-        link.classList.remove("current");
-      }
-    });
-  });
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
 </script>
 
-      </div>
-    </div>
+
+
+
   </body>
 </html>
