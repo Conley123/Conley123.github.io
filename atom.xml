@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://ballballyou.coding.me/</id>
     <title>南京吴彦祖</title>
-    <updated>2019-09-27T17:06:33.825Z</updated>
+    <updated>2019-09-27T17:09:16.424Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://ballballyou.coding.me/"/>
     <link rel="self" href="http://ballballyou.coding.me//atom.xml"/>
@@ -25,8 +25,34 @@
 <script>
     function myFunction01() {
         document.getElementById("demo01").innerHTML = Date();
-    }    
-</script>
+    }
+    function myFunction02() {
+            Date.prototype.format = function (fmt) {
+                var o = {
+                    "M+": this.getMonth() + 1,               //月份
+                    "d+": this.getDate(),                    //日
+                    "h+": this.getHours(),                   //小时
+                    "m+": this.getMinutes(),                 //分
+                    "s+": this.getSeconds(),                 //秒
+                    "q+": Math.floor((this.getMonth() + 3) / 3), //季度
+                    "S": this.getMilliseconds()             //毫秒
+                };
+<pre><code>            if (/(y+)/.test(fmt)) {
+</code></pre>
+<p>fmt = fmt.replace(RegExp.$1, (this.getFullYear() + &quot;&quot;).substr(4 - RegExp.$1.length));<br>
+}</p>
+<pre><code>            for (var k in o) {
+                if (new RegExp(&quot;(&quot; + k + &quot;)&quot;).test(fmt)) {
+                    fmt = fmt.replace(
+</code></pre>
+<p>RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : ((&quot;00&quot; + o[k]).substr((&quot;&quot; + o[k]).length)));<br>
+}<br>
+}<br>
+return fmt;<br>
+}</p>
+<p>document.getElementById(&quot;demo02&quot;).innerHTML = new Date().format(&quot;yyyy年MM月dd日hh小时mm分ss秒&quot;);<br>
+}<br>
+</script></p>
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -36,6 +62,11 @@
     <h2>现在时间是：</h2>
     <p id="demo01"></p>
     <button  onclick="myFunction01()">点我看时间👀</button>
+<pre><code>&lt;h1&gt;总有另一种方式等着你去发现&lt;/h1&gt;
+&lt;h2&gt;现在时间是：&lt;/h2&gt;
+&lt;p id=&quot;demo02&quot;&gt;&lt;/p&gt;
+&lt;button  onclick=&quot;myFunction02()&quot;&gt;再点我看看呢👀&lt;/button&gt;
+</code></pre>
 </body>
 </html>
 `
