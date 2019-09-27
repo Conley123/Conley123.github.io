@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>那就从JavaScript开始吧 | 南京吴彦祖</title>
 <meta name="description" content="静坐常思己过 闲谈莫论人非" />
-<link rel="shortcut icon" href="http://ballballyou.coding.me//favicon.ico?v=1569604828666">
+<link rel="shortcut icon" href="http://ballballyou.coding.me//favicon.ico?v=1569605091301">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="http://ballballyou.coding.me//styles/main.css">
@@ -20,7 +20,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="http://ballballyou.coding.me/">
-  <img class="avatar" src="http://ballballyou.coding.me//images/avatar.png?v=1569604828666" alt="">
+  <img class="avatar" src="http://ballballyou.coding.me//images/avatar.png?v=1569605091301" alt="">
   </a>
   <h1 class="site-title">
     南京吴彦祖
@@ -90,23 +90,21 @@
                 <p><img src="http://ballballyou.coding.me//post-images/1569598861526.jpg" alt=""><br>
 <strong>Demo01</strong>🍀</p>
 <p><em>手写一个查看当前时间的小案例</em></p>
-<hr>
-<p>`<!DOCTYPE html></p>
+<!DOCTYPE html>
 <html lang="en">
 <script>
-<pre><code>function myFunction02() {
-    Date.prototype.format = function (fmt) {
-        var o = {
-            &quot;M+&quot;: this.getMonth() + 1,               //月份
-            &quot;d+&quot;: this.getDate(),                    //日
-            &quot;h+&quot;: this.getHours(),                   //小时
-            &quot;m+&quot;: this.getMinutes(),                 //分
-            &quot;s+&quot;: this.getSeconds(),                 //秒
-            &quot;q+&quot;: Math.floor((this.getMonth() + 3) / 3), //季度
-            &quot;S&quot;: this.getMilliseconds()             //毫秒
-        };
-
-        if (/(y+)/.test(fmt)) {
+    function myFunction02() {
+        Date.prototype.format = function (fmt) {
+            var o = {
+                "M+": this.getMonth() + 1,               //月份
+                "d+": this.getDate(),                    //日
+                "h+": this.getHours(),                   //小时
+                "m+": this.getMinutes(),                 //分
+                "s+": this.getSeconds(),                 //秒
+                "q+": Math.floor((this.getMonth() + 3) / 3), //季度
+                "S": this.getMilliseconds()             //毫秒
+            };
+<pre><code>        if (/(y+)/.test(fmt)) {
             fmt = fmt.replace(RegExp.$1, (this.getFullYear() + &quot;&quot;).substr(4 - RegExp.$1.length));
         }
 
@@ -133,7 +131,7 @@
 <p id="demo02"></p>
 <button  onclick="myFunction02()">再点我看看呢👀</button>
 </body>
-</html>`
+</html>
 
               </div>
               <div class="toc-container">
