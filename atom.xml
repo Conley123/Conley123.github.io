@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://ballballyou.coding.me/</id>
     <title>南京吴彦祖</title>
-    <updated>2019-09-27T18:59:03.003Z</updated>
+    <updated>2019-09-27T19:14:39.027Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://ballballyou.coding.me/"/>
     <link rel="self" href="http://ballballyou.coding.me//atom.xml"/>
@@ -10,6 +10,34 @@
     <logo>http://ballballyou.coding.me//images/avatar.png</logo>
     <icon>http://ballballyou.coding.me//favicon.ico</icon>
     <rights>All rights reserved 2019, 南京吴彦祖</rights>
+    <entry>
+        <title type="html"><![CDATA[敢不敢来测试一下你的智商？]]></title>
+        <id>http://ballballyou.coding.me//post/T9h803qMs</id>
+        <link href="http://ballballyou.coding.me//post/T9h803qMs">
+        </link>
+        <updated>2019-09-27T19:13:43.000Z</updated>
+        <content type="html"><![CDATA[<p>`<!DOCTYPE html></p>
+<html>
+<body>
+<p>输入数字并点击提交：</p>
+<input id="id1" type="number" min="100">
+<p><button onclick="myFunction()">提交</button></p>
+<p>如果数字小于100（输入的 min 属性），将显示错误消息。</p>
+<p id="demo"></p>
+<script>
+function myFunction() {
+  var txt = "";
+  if (document.getElementById("id1").validity.rangeUnderflow) {
+    txt = "值太小";
+  } else {
+    txt = "输入有效";
+  } 
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+</body>
+</html>`]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[那就从JavaScript开始吧]]></title>
         <id>http://ballballyou.coding.me//post/KagSI8tQ2</id>
