@@ -2,14 +2,14 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://ballballyou.coding.me/</id>
     <title>南京吴彦祖</title>
-    <updated>2019-09-29T14:32:21.752Z</updated>
+    <updated>2020-01-19T13:40:39.657Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://ballballyou.coding.me/"/>
     <link rel="self" href="http://ballballyou.coding.me//atom.xml"/>
     <subtitle>静坐常思己过 闲谈莫论人非</subtitle>
     <logo>http://ballballyou.coding.me//images/avatar.png</logo>
     <icon>http://ballballyou.coding.me//favicon.ico</icon>
-    <rights>All rights reserved 2019, 南京吴彦祖</rights>
+    <rights>All rights reserved 2020, 南京吴彦祖</rights>
     <entry>
         <title type="html"><![CDATA[你有多久没看老大打球了]]></title>
         <id>http://ballballyou.coding.me//post/oo7QHS_R4</id>
@@ -112,6 +112,33 @@ function myFunction() {
 <img src="http://ballballyou.coding.me//post-images/1569427956412.jpg" alt="放一张美女图片给你看看哈"></p>
 <figure data-type="image" tabindex="1"><img src="http://ballballyou.coding.me//post-images/1569608336918.jpg" alt=""></figure>
 <figure data-type="image" tabindex="2"><img src="http://ballballyou.coding.me//post-images/1569608354206.jpg" alt=""></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[在重庆]]></title>
+        <id>http://ballballyou.coding.me//post/muCz8PpjA</id>
+        <link href="http://ballballyou.coding.me//post/muCz8PpjA">
+        </link>
+        <updated>2019-09-25T15:41:51.000Z</updated>
+        <summary type="html"><![CDATA[<p>中秋佳节，本该在南京赏花赏月赏秋香，无奈出差在贵阳，形单影只，孤独落寞，便来了长说走就走的旅行，一路上倒挺开心的，以下多图预警。😎</p>
+<p><img src="http://ballballyou.coding.me//post-images/1569426571598.jpg" alt=""><br>
+<img src="http://ballballyou.coding.me//post-images/1569426610560.jpg" alt="在火车上看日出2"><br>
+<strong>毕竟直辖市，牌面还是杠杠滴</strong>👏<br>
+<img src="http://ballballyou.coding.me//post-images/1569426682206.jpg" alt="解放碑1"><br>
+<img src="http://ballballyou.coding.me//post-images/1569426689640.jpg" alt="解放碑2"><br>
+<strong>重庆的桥令人影响深刻</strong><br>
+<img src="http://ballballyou.coding.me//post-images/1569426747349.jpg" alt="重庆市长江大桥"></p>
+]]></summary>
+        <content type="html"><![CDATA[<p>中秋佳节，本该在南京赏花赏月赏秋香，无奈出差在贵阳，形单影只，孤独落寞，便来了长说走就走的旅行，一路上倒挺开心的，以下多图预警。😎</p>
+<p><img src="http://ballballyou.coding.me//post-images/1569426571598.jpg" alt=""><br>
+<img src="http://ballballyou.coding.me//post-images/1569426610560.jpg" alt="在火车上看日出2"><br>
+<strong>毕竟直辖市，牌面还是杠杠滴</strong>👏<br>
+<img src="http://ballballyou.coding.me//post-images/1569426682206.jpg" alt="解放碑1"><br>
+<img src="http://ballballyou.coding.me//post-images/1569426689640.jpg" alt="解放碑2"><br>
+<strong>重庆的桥令人影响深刻</strong><br>
+<img src="http://ballballyou.coding.me//post-images/1569426747349.jpg" alt="重庆市长江大桥"></p>
+<!-- more -->
+<p>仅为测试，未完，待续。。。</p>
 ]]></content>
     </entry>
 </feed>
