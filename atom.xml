@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://Conley123.github.io</id>
     <title>南京吴彦祖</title>
-    <updated>2020-05-11T18:20:39.896Z</updated>
+    <updated>2020-05-18T15:31:10.403Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://Conley123.github.io"/>
     <link rel="self" href="http://Conley123.github.io/atom.xml"/>
@@ -10,6 +10,55 @@
     <logo>http://Conley123.github.io/images/avatar.png</logo>
     <icon>http://Conley123.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 南京吴彦祖</rights>
+    <entry>
+        <title type="html"><![CDATA[Redis]]></title>
+        <id>http://Conley123.github.io/post/7dU7hGTAq/</id>
+        <link href="http://Conley123.github.io/post/7dU7hGTAq/">
+        </link>
+        <updated>2020-05-18T15:24:49.000Z</updated>
+        <content type="html"><![CDATA[<p>===<mark><mark><mark><mark><mark><mark><mark><mark>Redis</mark></mark></mark></mark></mark></mark></mark></mark><br>
+基本命令：<br>
+set<br>
+get</p>
+<p><code>批量设置和批量获取：</code><br>
+mset<br>
+mget</p>
+<p><code>查看所有key</code><br>
+keys *</p>
+<p><code>HASH</code><br>
+HMSET key field1 value [...]<br>
+HGET key field1</p>
+<p>append name &quot;Stephen-Curry[30]&quot;<br>
+append age 30  注：若不存在这个key，则默认添加这个key</p>
+<p><code>自增和自减</code><br>
+incr 注：自增1<br>
+decr 注：自减1<br>
+incrby key 10 注：key自增10<br>
+decrby key 10 注：key自减10</p>
+<p><code>查看是否存在及倒计时</code><br>
+EXISTS key<br>
+EXPIRE key 10 注：10s后注销<br>
+ttl key 注：查看倒计时</p>
+<p>type key <code>判断类型</code><br>
+strlen key <code>查看长度</code></p>
+<p>GETRANGE key start end  <code>注：对key字符串截取</code><br>
+GETRANGE key 0 -1  <code>注：截取所有</code></p>
+<p><code>replace</code><br>
+SETRANGE key offset value 注：相当于replace<br>
+127.0.0.1:6379&gt; set key1 abcdefg<br>
+OK<br>
+127.0.0.1:6379&gt; get key1<br>
+&quot;abcdefg&quot;<br>
+127.0.0.1:6379&gt; setrange key1 1 23<br>
+(integer) 7<br>
+127.0.0.1:6379&gt; get key1<br>
+&quot;a23defg&quot;</p>
+<p><code>根据存在和不存在来设置key</code><br>
+setex 若存在设置（需要设置过期时间）<br>
+setnx 若不存在则设置（在分布式锁中常常使用）</p>
+<p>msetnx 批量设置不存在的数据（注意：没有msetex方式）</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[记录珍珠的成长]]></title>
         <id>http://Conley123.github.io/post/QZB52hAQE/</id>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>回南京 | 南京吴彦祖</title>
+<title>Redis | 南京吴彦祖</title>
 <meta name="description" content="静坐常思己过 闲谈莫论人非">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -87,19 +87,54 @@
       <div class="sm-12 md-8 col">
         <div class="paper">
           <article class="article">
-            <h1>回南京</h1>
+            <h1>Redis</h1>
             <p class="article-meta">
-              2019-09-26
+              2020-05-18
               
             </p>
             
-              <img src="http://Conley123.github.io/post-images/6wJrWrzGB.jpg" alt="回南京">
-            
             <div class="post-content">
-              <p>2019-09-21    难忘的一个日子</p>
-<p>在飞机上看了两个小时的日出后</p>
-<p>终于回到了温柔的南京🤞</p>
-<figure data-type="image" tabindex="1"><img src="http://Conley123.github.io/post-images/1569430270187.jpg" alt="" loading="lazy"></figure>
+              <p>===<mark><mark><mark><mark><mark><mark><mark><mark>Redis</mark></mark></mark></mark></mark></mark></mark></mark><br>
+基本命令：<br>
+set<br>
+get</p>
+<p><code>批量设置和批量获取：</code><br>
+mset<br>
+mget</p>
+<p><code>查看所有key</code><br>
+keys *</p>
+<p><code>HASH</code><br>
+HMSET key field1 value [...]<br>
+HGET key field1</p>
+<p>append name &quot;Stephen-Curry[30]&quot;<br>
+append age 30  注：若不存在这个key，则默认添加这个key</p>
+<p><code>自增和自减</code><br>
+incr 注：自增1<br>
+decr 注：自减1<br>
+incrby key 10 注：key自增10<br>
+decrby key 10 注：key自减10</p>
+<p><code>查看是否存在及倒计时</code><br>
+EXISTS key<br>
+EXPIRE key 10 注：10s后注销<br>
+ttl key 注：查看倒计时</p>
+<p>type key <code>判断类型</code><br>
+strlen key <code>查看长度</code></p>
+<p>GETRANGE key start end  <code>注：对key字符串截取</code><br>
+GETRANGE key 0 -1  <code>注：截取所有</code></p>
+<p><code>replace</code><br>
+SETRANGE key offset value 注：相当于replace<br>
+127.0.0.1:6379&gt; set key1 abcdefg<br>
+OK<br>
+127.0.0.1:6379&gt; get key1<br>
+&quot;abcdefg&quot;<br>
+127.0.0.1:6379&gt; setrange key1 1 23<br>
+(integer) 7<br>
+127.0.0.1:6379&gt; get key1<br>
+&quot;a23defg&quot;</p>
+<p><code>根据存在和不存在来设置key</code><br>
+setex 若存在设置（需要设置过期时间）<br>
+setnx 若不存在则设置（在分布式锁中常常使用）</p>
+<p>msetnx 批量设置不存在的数据（注意：没有msetex方式）</p>
 
             </div>
           </article>
@@ -110,9 +145,9 @@
               <div class="next">
                 下一篇
               </div>
-              <a href="http://Conley123.github.io/post/zai-cheng-du/">
+              <a href="http://Conley123.github.io/post/QZB52hAQE/">
                 <h3 class="post-title">
-                  zai成都
+                  记录珍珠的成长
                 </h3>
               </a>
             </div>
@@ -223,7 +258,7 @@
     </div>
     <div class="row">
       
-        <a href="http://Conley123.github.io/tag/Ya6WLGhH7/" class="badge secondary">
+        <a href="http://Conley123.github.io/tag/Ya6WLGhH7/" class="badge success">
           旅行
         </a>
       
