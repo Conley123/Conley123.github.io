@@ -1,60 +1,172 @@
+
+<!DOCTYPE html>
 <html>
   <head>
-  <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+<meta charset="utf-8" >
+
 <title>旅行 | 南京吴彦祖</title>
-<meta name="description" content="静坐常思己过 闲谈莫论人非" />
-<link rel="shortcut icon" href="http://Conley123.github.io/favicon.ico?v=1589816134199">
+<meta name="description" content="静坐常思己过 闲谈莫论人非">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="http://Conley123.github.io/favicon.ico?v=1589816367816">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="http://Conley123.github.io/styles/main.css">
 
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="http://Conley123.github.io">
-  <img class="avatar" src="http://Conley123.github.io/images/avatar.png?v=1589816134199" alt="">
-  </a>
-  <h1 class="site-title">
-    南京吴彦祖
-  </h1>
-  <p class="site-description">
-    静坐常思己过 闲谈莫论人非
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="/" class="menu">
-          首页
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu">
-          归档
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="http://Conley123.github.io">
+        <img class="avatar" src="http://Conley123.github.io/images/avatar.png?v=1589816367816" alt="" width="32px" height="32px">
+      </a>
+      <a href="http://Conley123.github.io">
+        <h1 class="site-title">南京吴彦祖</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
   </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
+
+        <div class="current-tag-container">
+          <h2 class="title">
+            <i class="icon icon-pricetags-outline"></i> 旅行
+          </h2> 
+        </div>
+
+        
+<section class="post-item">
+    <div class="content">
+      <a href="http://Conley123.github.io/post/zai-cheng-du/">
+        <h2 class="post-title">zai成都</h2>
+      </a>
+      <div class="post-abstract">
+        
+      </div>
+      <div class="post-info">
+        <span><i class="icon icon-calendar-outline"></i> 2019-09-26</span>
+        
+          <span>
+            <i class="icon icon-pricetags-outline"></i>
+            
+              <a href="http://Conley123.github.io/tag/Ya6WLGhH7/">
+                旅行
+                
+              </a>
+            
+          </span>
+        
+      </div>
+    </div>
+    
+      <a href="http://Conley123.github.io/post/zai-cheng-du/">
+        <div class="feature-container" style="background-image: url('http://Conley123.github.io/post-images/zai-cheng-du.jpg')">
+        </div>
+      </a>
+    
+  </section>
+
+<section class="post-item">
+    <div class="content">
+      <a href="http://Conley123.github.io/post/muCz8PpjA/">
+        <h2 class="post-title">在重庆</h2>
+      </a>
+      <div class="post-abstract">
+        <p>中秋佳节，本该在南京赏花赏月赏秋香，无奈出差在贵阳，形单影只，孤独落寞，便来了长说走就走的旅行，一路上倒挺开心的，以下多图预警。😎</p>
+<p><img src="http://ballballyou.coding.me//post-images/1569426571598.jpg" alt="" loading="lazy"><br>
+<img src="http://ballballyou.coding.me//post-images/1569426610560.jpg" alt="在火车上看日出2" loading="lazy"><br>
+<strong>毕竟直辖市，牌面还是杠杠滴</strong>👏<br>
+<img src="http://ballballyou.coding.me//post-images/1569426682206.jpg" alt="解放碑1" loading="lazy"><br>
+<img src="http://ballballyou.coding.me//post-images/1569426689640.jpg" alt="解放碑2" loading="lazy"><br>
+<strong>重庆的桥令人影响深刻</strong><br>
+<img src="http://ballballyou.coding.me//post-images/1569426747349.jpg" alt="重庆市长江大桥" loading="lazy"></p>
+
+      </div>
+      <div class="post-info">
+        <span><i class="icon icon-calendar-outline"></i> 2019-09-25</span>
+        
+          <span>
+            <i class="icon icon-pricetags-outline"></i>
+            
+              <a href="http://Conley123.github.io/tag/Ya6WLGhH7/">
+                旅行
+                
+              </a>
+            
+          </span>
+        
+      </div>
+    </div>
+    
+      <a href="http://Conley123.github.io/post/muCz8PpjA/">
+        <div class="feature-container" style="background-image: url('http://Conley123.github.io/post-images/muCz8PpjA.jpg')">
+        </div>
+      </a>
+    
+  </section>
+
+
+<div class="pagination-container">
+  
+  
+</div>
+
+
+      </div>
+
+      <div class="site-footer">
+  <div class="slogan">静坐常思己过 闲谈莫论人非</div>
   <div class="social-container">
     
       
@@ -68,129 +180,26 @@
       
     
   </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">小居居</a> | <a class="rss" href="http://Conley123.github.io/atom.xml" target="_blank">RSS</a>
 </div>
 
-        <div class="current-tag-container">
-            <h2 class="title">
-                标签：# 旅行
-            </h2> 
-        </div>
-        <div class="post-container">
-  
-    <article class="post">
-      <a href="http://Conley123.github.io/post/zai-cheng-du/">
-        <h2 class="post-title">zai成都</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2019-09-26
-        </span>
-        <span>
-          1 min read
-        </span>
-        
-          <a href="http://Conley123.github.io/tag/Ya6WLGhH7/" class="post-tag">
-            # 旅行
-          </a>
-        
-      </div>
-      
-        <a href="http://Conley123.github.io/post/zai-cheng-du/" class="post-feature-image" style="background-image: url('http://Conley123.github.io/post-images/zai-cheng-du.jpg')">
-        </a>
-      
-      <div class="post-abstract">
-        
-      </div>
-    </article>
-  
-    <article class="post">
-      <a href="http://Conley123.github.io/post/muCz8PpjA/">
-        <h2 class="post-title">在重庆</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2019-09-25
-        </span>
-        <span>
-          1 min read
-        </span>
-        
-          <a href="http://Conley123.github.io/tag/Ya6WLGhH7/" class="post-tag">
-            # 旅行
-          </a>
-        
-      </div>
-      
-        <a href="http://Conley123.github.io/post/muCz8PpjA/" class="post-feature-image" style="background-image: url('http://Conley123.github.io/post-images/muCz8PpjA.jpg')">
-        </a>
-      
-      <div class="post-abstract">
-        <p>中秋佳节，本该在南京赏花赏月赏秋香，无奈出差在贵阳，形单影只，孤独落寞，便来了长说走就走的旅行，一路上倒挺开心的，以下多图预警。😎</p>
-<p><img src="http://ballballyou.coding.me//post-images/1569426571598.jpg" alt="" loading="lazy"><br>
-<img src="http://ballballyou.coding.me//post-images/1569426610560.jpg" alt="在火车上看日出2" loading="lazy"><br>
-<strong>毕竟直辖市，牌面还是杠杠滴</strong>👏<br>
-<img src="http://ballballyou.coding.me//post-images/1569426682206.jpg" alt="解放碑1" loading="lazy"><br>
-<img src="http://ballballyou.coding.me//post-images/1569426689640.jpg" alt="解放碑2" loading="lazy"><br>
-<strong>重庆的桥令人影响深刻</strong><br>
-<img src="http://ballballyou.coding.me//post-images/1569426747349.jpg" alt="重庆市长江大桥" loading="lazy"></p>
 
-      </div>
-    </article>
-  
-</div>
+    </div>
+    <script type="application/javascript">
 
-        <div class="pagination-container">
-  
-  
-</div>
+hljs.initHighlightingOnLoad()
 
-        <div class="site-footer">
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">小居居</a> | 
-  <a class="rss" href="http://Conley123.github.io/atom.xml" target="_blank">RSS</a>
-</div>
-
-<script>
-  hljs.initHighlightingOnLoad()
-
-  let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
-
-  // This should probably be throttled.
-  // Especially because it triggers during smooth scrolling.
-  // https://lodash.com/docs/4.17.10#throttle
-  // You could do like...
-  // window.addEventListener("scroll", () => {
-  //    _.throttle(doThatStuff, 100);
-  // });
-  // Only not doing it here to keep this Pen dependency-free.
-
-  window.addEventListener("scroll", event => {
-    let fromTop = window.scrollY;
-
-    mainNavLinks.forEach((link, index) => {
-      let section = document.getElementById(decodeURI(link.hash).substring(1));
-      let nextSection = null
-      if (mainNavLinks[index + 1]) {
-        nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-      }
-      if (section.offsetTop <= fromTop) {
-        if (nextSection) {
-          if (nextSection.offsetTop > fromTop) {
-            link.classList.add("current");
-          } else {
-            link.classList.remove("current");    
-          }
-        } else {
-          link.classList.add("current");
-        }
-      } else {
-        link.classList.remove("current");
-      }
-    });
-  });
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
 </script>
 
-      </div>
-    </div>
+
+
+
   </body>
 </html>
